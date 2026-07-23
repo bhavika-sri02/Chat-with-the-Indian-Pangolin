@@ -1,0 +1,350 @@
+/*GLOBAL STYLES*/
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url("background.png");
+    background-size: cover;
+    background-position: center;
+    color: #2c3e50;
+}
+
+
+/*MAIN CONTAINER*/
+
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+
+    background-color: rgba(255, 255, 255, 0.8);
+
+    border-radius: 20px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+
+/*PANGOLIN IMAGE*/
+
+.pangolin {
+    width: 150px;
+    animation: bobbing 1s infinite;
+}
+
+@keyframes bobbing {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+
+/*QUESTION BUTTONS*/
+
+.question-btn {
+
+    display: block;
+
+    margin: 10px auto;
+
+    padding: 10px 20px;
+
+    background-color: #74b9ff;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.question-btn:hover {
+    background-color: #4fa3f7;
+}
+
+
+/*ANSWER BOX*/
+
+.answer-box {
+
+    display: none;
+
+    margin-top: 20px;
+
+    padding: 15px;
+
+    background-color: white;
+
+    border: 2px solid #2d3436;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+}
+
+
+/*BACK BUTTON*/
+
+.back-btn {
+
+    display: none;
+
+    margin-top: 20px;
+
+    padding: 10px 20px;
+
+    background-color: #fab1a0;
+
+    border: none;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background-color: #f79c87;
+}
+
+
+/*SIDE BUTTONS*/
+
+.side-buttons {
+
+    position: fixed;
+
+    top: 100px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    z-index: 2;
+}
+
+.left-buttons {
+    left: 10px;
+}
+
+.right-buttons {
+    right: 10px;
+}
+
+
+/*INFORMATION BUTTONS*/
+
+.info-btn {
+
+    width: 130px;
+
+    padding: 10px;
+
+    background-color: #3c2803;
+
+    color: #f8fafb;
+
+    border: none;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.info-btn:hover {
+    background-color: #5b3d08;
+}
+
+
+/*INFO POPUP*/
+
+.info-box {
+
+    display: none;
+
+    position: fixed;
+
+    bottom: 120px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    max-width: 300px;
+
+    padding: 15px 20px;
+
+    background: #dfe6e9;
+
+    border-radius: 15px;
+
+    font-size: 15px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+    z-index: 10;
+}
+
+
+/*MAP POPUP*/
+
+.map-container {
+
+    display: none;
+
+    position: fixed;
+
+    top: 80px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 90%;
+
+    max-width: 800px;
+
+    height: 450px;
+
+    background: #f1f2f6;
+
+    border: 4px solid #636e72;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+    z-index: 5;
+}
+
+.map-header {
+
+    text-align: right;
+
+    padding: 10px;
+}
+
+.close-map-btn {
+
+    background-color: #d63031;
+
+    color: white;
+
+    border: none;
+
+    padding: 5px 10px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.close-map-btn:hover {
+    background-color: #b71c1c;
+}
+
+.map-container iframe {
+
+    width: 100%;
+
+    height: 90%;
+
+    border: 0;
+}
+
+
+/*VIDEO POPUP*/
+
+.popup-video-container {
+
+    display: none;
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.8);
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 1000;
+}
+
+.popup-video-container video {
+
+    width: 80%;
+
+    max-width: 700px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.close-video-btn {
+
+    position: absolute;
+
+    top: 20px;
+
+    right: 30px;
+
+    background: #d63031;
+
+    color: white;
+
+    border: none;
+
+    padding: 8px 14px;
+
+    font-size: 20px;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.close-video-btn:hover {
+    background-color: #b71c1c;
+}

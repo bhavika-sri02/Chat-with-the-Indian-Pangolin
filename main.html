@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with the Indian Pangolin</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--LEFT SIDE INFORMATION BUTTONS-->
+
+    <div class="side-buttons left-buttons">
+
+        <button class="info-btn"
+            onclick="showInfo('Scientific name: Manis crassicaudata')">
+            Scientific Name
+        </button>
+
+        <button class="info-btn"
+            onclick="showInfo('Location: Found across India Tropical Asia and Africa')">
+            Where I Live
+        </button>
+
+        <button class="info-btn"
+            onclick="showInfo('Length: 84–122 cm, Weight: 10–16 kg')">
+            Size & Weight
+        </button>
+
+        <button class="info-btn"
+            onclick="toggleMap()">
+            Pangolins across the World
+        </button>
+
+    </div>
+
+    <!--RIGHT SIDE INFORMATION BUTTONS-->
+
+    <div class="side-buttons right-buttons">
+
+        <button class="info-btn"
+            onclick="showInfo('I eat ants and termites.')">
+            What I Eat
+        </button>
+
+        <button class="info-btn"
+            onclick="showInfo('Threats: Hunting, trafficking, habitat loss.')">
+            My Threats
+        </button>
+
+        <button class="info-btn"
+            onclick="showInfo('I am endangered as listed in IUCN Red List.')">
+            Status
+        </button>
+
+        <button class="info-btn"
+            onclick="showPopupVideo()">
+            Watch Me in Action
+        </button>
+
+    </div>
+
+    <!--MAIN CHAT CONTAINER-->
+
+    <div class="container">
+
+        <h1>Chat with the Indian Pangolin!</h1>
+
+        <img
+            src="pangolin_image.jpeg"
+            alt="Indian Pangolin"
+            class="pangolin"
+            id="pangolin">
+
+        <div id="question-list"></div>
+
+        <div
+            id="answer-box"
+            class="answer-box">
+        </div>
+
+        <button
+            class="back-btn"
+            onclick="resetUI()">
+            Back
+        </button>
+
+    </div>
+
+    <!--INFO POPUP-->
+
+    <div
+        id="info-box"
+        class="info-box">
+    </div>
+
+    <!--MAP POPUP-->
+
+    <div
+        id="map-container"
+        class="map-container">
+
+        <div class="map-header">
+
+            <button
+                class="close-map-btn"
+                onclick="toggleMap()">
+                Close Map
+            </button>
+
+        </div>
+
+        <iframe
+            src="map.jpg"
+            width="100%"
+            height="90%"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+    </div>
+
+    <!--VIDEO POPUP-->
+
+    <div
+        id="popup-video-container"
+        class="popup-video-container">
+
+        <video
+            id="popup-video"
+            controls>
+
+            <source
+                src="pangolin_in_action.mp4"
+                type="video/mp4">
+
+            Your browser does not support the video tag.
+
+        </video>
+
+        <button
+            class="close-video-btn"
+            onclick="closePopupVideo()">
+            ✖
+        </button>
+
+    </div>
+
+    <script src="ques_ans.js"></script>
+
+</body>
+
+</html>
