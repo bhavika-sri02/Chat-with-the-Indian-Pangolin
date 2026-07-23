@@ -1,8 +1,24 @@
 # 🦔 Chat with the Indian Pangolin
 
+![HTML](https://img.shields.io/badge/HTML-5-E34F26?logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?logo=javascript&logoColor=black)
+![Web Speech API](https://img.shields.io/badge/Web%20Speech%20API-Enabled-blue)
+![Status](https://img.shields.io/badge/Project-Completed-success)
+![Deployment](https://img.shields.io/badge/Deployed%20on-Netlify-00C7B7?logo=netlify&logoColor=white)
+![License](https://img.shields.io/badge/License-Educational-green)
+
+## 🌐 Live Demo
+
+🔗 **Experience the application here:**
+
+**https://chatwithpangolin.netlify.app/**
+
 An interactive educational web application developed for the **Species Advocacy Competition** to creatively advocate for the conservation of the **Indian Pangolin (*Manis crassicaudata*)**, one of the world's most trafficked and endangered mammals.
 
 Instead of presenting conservation information as static text, this project gives the pangolin **its own voice**. Users interact by asking questions, and the pangolin responds through **speech synthesis**, creating an engaging experience that encourages empathy and awareness.
+
+![Video](demo.gif)
 
 ---
 
@@ -122,7 +138,7 @@ Rather than simply reading facts, users hear the pangolin "speak" about its stru
 
 ### Habitat Map
 
-![Map](map.png)
+![Map](map.jpg)
 
 ---
 
